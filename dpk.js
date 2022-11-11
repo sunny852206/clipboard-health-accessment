@@ -18,7 +18,8 @@ exports.deterministicPartitionKey = (event) => {
   // if didnt pass anything
   if (candidate) {
     if (typeof candidate !== "string") {
-      candidate = JSON.stringify(candidate);
+      // console.log("hi")
+      // candidate = JSON.stringify(candidate);
     }
   } else {
     candidate = TRIVIAL_PARTITION_KEY;

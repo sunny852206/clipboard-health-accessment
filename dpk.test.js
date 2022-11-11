@@ -7,13 +7,29 @@ describe("deterministicPartitionKey", () => {
     expect(trivialKey).toBe("0");
   });
 
-  // //
-  // it("Returns the literal '0' when given no input", () => {
-  //   const trivialKey = deterministicPartitionKey(2);
-  //   const data = JSON.stringify(2);
-  //   let ash = crypto.createHash("sha3-512").update(data).digest("hex");
-  //   expect(trivialKey).toBe(ash);
-  // });
+  //
+  it("Return proper crypto when given number as input", () => {
+    const trivialKey = deterministicPartitionKey(123);
+    const data = JSON.stringify(123);
+    let hashed = crypto.createHash("sha3-512").update(data).digest("hex");
+    expect(trivialKey).toBe(hashed);
+  });
+
+  it("Return proper crypto when given string as input", () => {
+    const trivialKey = deterministicPartitionKey("testing");
+    const data = JSON.stringify("testing");
+    let hashed = crypto.createHash("sha3-512").update(data).digest("hex");
+    expect(trivialKey).toBe(hashed);
+  });
+
+  it("Return proper crypto when given string as input", () => {
+    const trivialKey = deterministicPartitionKey("testing123");
+    const data = JSON.stringify("testing123");
+    let hashed = crypto.createHash("sha3-512").update(data).digest("hex");
+    expect(trivialKey).toBe(hashed);
+  });
+
+
 
   // it("Returns the literal '0' when given no input", () => {
   //   const trivialKey = deterministicPartitionKey();
@@ -21,19 +37,4 @@ describe("deterministicPartitionKey", () => {
   // });
 });
 
-// describe("reverseString", () => {
-//   test("reverses single word", () => {
-//     expect(reverseString("hello")).toEqual("olleh");
-//   });
 
-//   test("reverses multiple words", () => {
-//     expect(reverseString("hello there")).toEqual("ereht olleh");
-//   });
-
-//   test("works with numbers and punctuation", () => {
-//     expect(reverseString("123! abc!")).toEqual("!cba !321");
-//   });
-//   test("works with blank strings", () => {
-//     expect(reverseString("")).toEqual("");
-//   });
-// });
