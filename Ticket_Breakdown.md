@@ -16,7 +16,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
-##Ticket 1: Standardized unique facility prefix ID for all facilities
+## Ticket 1: Standardized unique facility prefix ID for all facilities
 
 - Details:
   Discuss with all facilities on our platform to generate a desired prefix ID for agents. PrefixID needs to be an unique ID across all facilities with standardized format to avoid duplication. (such as 3 ~ 5 alphabets with 3 ~ 5 numbers)
@@ -27,7 +27,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 - Time / effort:
   Expected in 10 business days.
 
-##Ticket 2: create new function for facilities to save custom ids for each agent
+## Ticket 2: create new function for facilities to save custom ids for each agent
 
 - Details:Create a function to allow facilities to create custom ids, the function needs to ensure each facility can only use their unique prefix ID, follow by the custom ID. ID will not be input to the database if there is a duplication.
 
@@ -37,7 +37,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 - Time / effort:
   Expected in 10 business days.
 
-##Ticket 3: Assign each facility's new prefix ID into our internal database
+## Ticket 3: Assign each facility's new prefix ID into our internal database
 
 - Details: Create a new column for the new prefixID from each facility, input facility's new prefix ID by matching with their facility's id in our database.
 
@@ -47,7 +47,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 - Time / effort:
   Expected in 2 to 4 weeks depending on the numbers of the records in the database, and time needed to validate accuracy.
 
-##Ticket 4: Test the ability to generate reports with facility's own custom ids
+## Ticket 4: Test the ability to generate reports with facility's own custom ids
 
 - Details: Generate sample reports using facility's custom ids, check if the list of shifts with custom ids are able to generate proper numbers. Compares results with original generateReport function.
 
