@@ -9,3 +9,6 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+I found that in the original code, there's no need to run on some of the lines if no input is given to the function. I decided to combine the code and make an if statement to check at the beginning of the function, in order to make the logic clearer. I also grouped two of the format checker together to make it more readable. 
+
+Other than that, the original function doesn't have any comments written, so I wrote comments where needed to the best of my understanding of what the function does.
