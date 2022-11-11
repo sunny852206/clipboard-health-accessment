@@ -47,7 +47,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 - Time / effort:
   Expected in 2 to 4 weeks depending on the numbers of the records in the database, and time needed to validate accuracy.
 
-#Ticket 4: Test the ability to generate reports with facility's own custom ids
+##Ticket 4: Test the ability to generate reports with facility's own custom ids
 
 - Details: Generate sample reports using facility's custom ids, check if the list of shifts with custom ids are able to generate proper numbers. Compares results with original generateReport function.
 
