@@ -5,6 +5,7 @@ exports.deterministicPartitionKey = (event) => {
   const MAX_PARTITION_KEY_LENGTH = 256;
   let candidate;
 
+  //passed event
   if (event) {
     if (event.partitionKey) {
       candidate = event.partitionKey;
@@ -14,6 +15,7 @@ exports.deterministicPartitionKey = (event) => {
     }
   }
 
+  // if didnt pass anything
   if (candidate) {
     if (typeof candidate !== "string") {
       candidate = JSON.stringify(candidate);
